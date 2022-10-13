@@ -7,57 +7,54 @@
     <title>Spotify</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gradient-to-r from-blue-500 to-pink-400">
+<body class="bg-one_dark py-5">
     <!-- the content wrapper -->
     <div class="container mx-auto px-20">
-        <div class="container my-4 bg-dark rounded py-1">
-            <h1 class="text-xl text-center text-white ">Spotify</h1>
-          </div>
-        <div class=" bg-primary rounded-lg text-white container  mx-auto px-1 py-1">
+        
+        <div class=" bg-primary rounded-lg text-white container my-6  mx-auto border border-emerald-200 py-1 drop-shadow-lg">
             <!-- the first container -->
-             <div class="my-1 container mx-4 flex ">
-                <div class="first_links">
-                    <a href="#"><img class="hover:bg-dark rounded" src="../img/dots_loading_24px.png" alt="dot"></a>
-                </div>
-                <div class="first_links">
-                    <a href="#"><img class="hover:bg-dark rounded" src="../img/back_.png" alt="back"></a>
-                </div>
-                <div class="first_links">
-                    <a href="#"><img class="hover:bg-dark rounded" src="../img/forward_24px.png" alt=" forward"></a>
-                </div>
-                <div class="my-3">
-                    <img src="../img/home_24px.png" alt="home" class=" bg-dark w-8 h-8 ml-60  rounded-full">
-                </div>
-                <div class="my-3">
-                    <input type="search" placeholder="Que souhaitez-vous ecouter ? " class="py-2 px-3 ml-2 w-72 bg-dark text-white rounded-full">
-                </div>
-                <div class="my-4">
-                    <a href="#" class="hover:shadow-lg rounded-full  border-white py-1 px-4 hover:bg-dark transition ease-out duration-200  ml-28 border-2 hover:text-gray-400 font-bold">S'abonner</a>
-                </div>
-                <div class="w-14 h-14 bg-dark rounded-full flex items-center ml-5"> 
-                    <div>
-                        <img src="../img/cor3.png" class="w-10 h-10 rounded-full ml-2" alt="allow">
+            <div class="container mx-auto">
+                <div class=" bg-dark mb-2 mx-1  rounded flex">
+                    <div class="first_links">
+                        <a href="#"><img class="hover:scale-110 rounded" src="../img/dots_loading_24px.png" alt="dot"></a>
                     </div>
-                </div>
-                <div class="flex ml-4">
-                    <div class="mx-1">
-                        <img src="../img/subtract_16px.png" class="rounded px-2 py-2 hover:bg-dark" alt="subtract_16px">
+                    <div class="first_links">
+                        <a href="#"><img class="hover:scale-110 rounded" src="../img/back_.png" alt="back"></a>
                     </div>
-                    <div class="mx-1">
-                        <img src="../img/full_screen_16px.png" class="rounded px-2 py-2 hover:bg-dark" alt="expand_24px">
+                    <div class="first_links">
+                        <a href="#"><img class="hover:scale-110 rounded" src="../img/forward_24px.png" alt=" forward"></a>
                     </div>
-                    <div class="mx-1">
-                        <img src="../img/close_16px.png" class="rounded px-2 py-2 hover:bg-dark" alt="expand_24px">
+                    <div class="mt-5">
+                        <img src="../img/home_24px.png" alt="home" class="hover:scale-110 w-8 h-8 ml-60  rounded-full">
                     </div>
-                </div>
-                
-
-             </div>
-    
+                    <div class="mt-5">
+                        <input type="search" placeholder="Que souhaitez-vous ecouter ? " class="bg-black py-2 px-3 ml-2 w-72  text-white rounded-full">
+                    </div>
+                    <div class="mt-7">
+                        <a href="#" class="hover:shadow-lg rounded-full  border-white py-1 px-4 hover:bg-dark transition ease-out duration-200  ml-28 border-2 hover:text-gray-400 font-bold">S'abonner</a>
+                    </div>
+                    <div class="w-14 h-14 my-2 bg-neutral-700 rounded-full flex items-center ml-5"> 
+                        <div>
+                            <img src="../img/cor3.png" class="w-10 h-10 rounded-full ml-2" alt="allow">
+                        </div>
+                    </div>
+                    <div class="flex ml-4">
+                        <div class="mx-1">
+                            <img src="../img/subtract_16px.png" class="rounded px-2 py-2 hover:scale-150" alt="subtract_16px">
+                        </div>
+                        <div class="mx-1">
+                            <img src="../img/full_screen_16px.png" class="rounded px-2 py-2 hover:scale-150" alt="expand_24px">
+                        </div>
+                        <div class="mx-1">
+                            <img src="../img/close_16px.png" class="rounded px-2 py-2 hover:scale-150" alt="expand_24px">
+                        </div>
+                    </div>
+                 </div>
+            </div>
              <!-- the second container -->
              <div class="container mx-auto  flex rounded">
                 <!-- the first grid -->
-                <div class="rounded  mx-1 w-[20%] bg-dark">
+                <div class="rounded  mx-1 w-[20%] bg-dark border border-emerald-200">
                     <div class="container mx-auto">
                         <div class="left_grid ">
                             <div class="flex"><img src="../img/business_50px.png" class="w-6 h-6" alt="business_50px"><span class=" ml-3 cursor-pointer hover:text-gray-500 text-gray-400"> Bibliotheque</span></div>
@@ -90,7 +87,7 @@
                    
                 </div>
                 <!-- the second grid -->
-                <div class=" py-2 bg-gradient-to-b rounded w-[80%] from-pink-900 to-dark  mx-1">
+                <div class=" py-2 bg-gradient-to-b rounded w-[80%] from-pink-900 to-dark  mx-1 border border-emerald-200">
                     <h1 class="font-bold mx-3">Bonjour</h1>
                     <!-- the grid content -->
                     <div class="grid grid-cols-3 my-2">
@@ -158,42 +155,56 @@
                 </div>
              </div>
                <!-- the footer -->
-               <div class="mt-2 mx-1 rounded bg-black">
-                <div class="container mx-auto flex">
-                    <div class="bg-white w-10 h-10 my-3 mx-3">
-                        <img src="../img/ch.png" alt="ch">
-                    </div>
-                    <div class="my-3">
-                        <div >
-                            <h3 class="text-gray-400">O Little Town of Bethlehem</h3>
-                            <h4 class="text-xs text-gray-500">Merry Christmas, Klassische Musik, Christmas Time</h4>
+               <div class="container mx-auto">
+                <div class="mx-1 mt-2  flex justify-between  rounded bg-dark">
+                    <!-- the first flex -->
+                    <div class="container mx-auto">
+                        <!-- this conatiner have twp flex -->
+                        <div class="flex">
+                            <div class="px-2 py-2"><img src="../img/cor1.png" alt="ch" class="w-[50px] rounded"></div>
+                            <div class="px-2 py-3">
+                                <ul>
+                                    <li class="font-semibold">Woke Up  in Love</li>
+                                    <li class="text-xs text-zinc-400">Kygo, Gryffin, calum Scott</li>
+                                </ul>
+                            </div>
+                            <div class="pt-7 px-7"><img src="../img/favorite_24px.png" class="w-4 hover:scale-150" alt="favorite"></div>
                         </div>
                     </div>
-                    <div class="my-4 ml-3">
-                        <img src="../img/favorite_24px.png" class="hover:bg-green-500 rounded-full" alt="favorite_24px">
-                    </div>
-                    <div class="mt-3">
-                        <div class="flex ml-28">
-                            <div class="mx-2 transition ease-out duration-500"><img class="hover:bg-zinc-600 px-2 py-2 rounded-full" src="../img/shuffle_16px.png" alt="shuffle_16px"></div>
-                            <div class="mx-2 transition ease-out duration-500"><img class="hover:bg-zinc-600 px-2 py-2 rounded-full" src="../img/skip_to_start_16px.png" alt="skip_to_start_16px"></div>
-                            <div class="mx-2 transition ease-out duration-500"><img class="hover:bg-zinc-600 px-2 py-2 rounded-full" src="../img/pause_16px.png" alt="play_24px"></div>
-                            <div class="mx-2 transition ease-out duration-500"><img class="hover:bg-zinc-600 px-2 py-2 rounded-full" src="../img/end_16px.png" alt="end_16px"></div>
-                            <div class="mx-2 transition ease-out duration-500"><img class="hover:bg-zinc-600 px-2 py-2 rounded-full" src="../img/repeat_16px.png" alt="repeat_16px"></div>
+                    <!-- the second flex -->
+                    <div class="container  mx-auto items-center">
+                        <!-- this container have five flex  -->
+                        <div class="flex ml-52">
+                            <div class="second_flex"><img class="media" src="../img/shuffle_16px.png" alt="shuffle"></div>
+                            <div class="second_flex"><img class="media" src="../img/back_24px.png"  alt="back"></div>
+                            <div class="second_flex"><img class="hover:scale-150" src="../img/pause_16px.png" alt="pause"></div>
+                            <div class="second_flex"><img class="media" src="../img/forward_24px.png" alt="forward"></div>
+                            <div class="second_flex"><img class="media" src="../img/repeat_16px.png"  alt="repeat"></div>
                         </div>
-                        <div class="mb-1 ml-4">
-                            <img src="../img/progress.png" alt="progress">
+                        <!-- the last container of the second div -->
+                        <div class="container items-center mx-auto">
+                            <div class="flex justify-center ml-10 py-2">
+                                <div class=""><div class="text-xs mx-1  font-thin">2:45</div></div>
+                                <div class="pt-2">
+                                    <div class="bg-white w-[400px] rounded-full h-1"><div class="bg-emerald-600 w-[320px] rounded-full h-1"></div></div>
+                                </div>
+                                <div class="text-xs mx-1 font-thin">3:02</div>
+                            </div>
                         </div>
                     </div>
-                    <div class="mt-3">
-                        <div class="flex ml-28 mt-4">
-                            <div><img src="../img/sound_50px.png" alt="sound_50px" class="w-6 cursor-pointer"></div>
-                            <div><img src="../img/prog.png" alt="prog" class="mt-1 cursor-pointer"></div>
+                    <!-- the last container -->
+                    <div class="container mx-auto">
+                        <!-- this conatainer have two flex -->
+                        <div class="flex ml-40">
+                            <div class="my-7 mx-1"><img src="../img/sound_50px.png" class="w-4" alt=""></div>
+                            <div class="my-8">
+                                <div class=" w-[100px] h-1 bg-white rounded-full"><div class="w-[50px] h-1 bg-emerald-600" rounded-full></div></div>
+                            </div>
                         </div>
                     </div>
-
                 </div>
-              </div> 
-        </div>
+               </div>
+         </div>
     </div>
     
 </body>
