@@ -13,7 +13,7 @@ module.exports = {
     },
     colors: ({ colors }) => ({
       dark:'#191919',
-      op: '#482F3E',
+      one_dark:'#17181A',
       primary:'#030306',
       inherit: colors.inherit,
       current: colors.current,
