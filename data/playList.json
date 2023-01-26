@@ -1,5 +1,11 @@
 [
     {
-        
+        "titre":"Power Hour",
+        "image":"../img/cor1.png"
+    },
+    {
+        "titre":"Motivation Mix",
+        "image":"../img/cor2.png"
     }
+
 ]
