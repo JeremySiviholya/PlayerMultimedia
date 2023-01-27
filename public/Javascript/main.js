@@ -5,8 +5,10 @@ const playLists=await fetch('../../data/playList.json').then(playLists=>playList
 
 const genererPieces=(playLists)=>
 {
+    
     const SectionFiches=document.querySelector('.fiches');
-    const PiecesElemnts=document.createElement('div')
+    const PiecesElemnts=document.createElement('article')
+    PiecesElemnts.classList.add("personalize")
 
     for(let i=0;i<playLists.length;i+=1)
     {
@@ -17,15 +19,35 @@ const genererPieces=(playLists)=>
         imageElement.src=article.image;
 
         const titreElemnt=document.createElement('p');
-        titreElemnt.innerHTML=article.titre;
+        titreElemnt.innerText=article.titre;
 
         SectionFiches.appendChild(PiecesElemnts);
         PiecesElemnts.appendChild(imageElement);
         PiecesElemnts.appendChild(titreElemnt);
-
-
-        
+    
     }
 }
 
 genererPieces(playLists);
+
+const btnTrier=document.createElement('button')
+btnTrier.textContent='trier le element';
+btnTrier.style.color='white'
+btnTrier.addEventListener('click',()=>{
+    const piecesOrdonee=Array.from(playLists);
+    piecesOrdonee.sort((a,b)=>a.prix -b.prix);
+
+    document.querySelector('.fiches').innerHTML="";
+    genererPieces(piecesOrdonee);
+})
+
+PiecesElemnts.appendChild(btnTrier);
+
+
+const btnFilter=document.querySelector('.btnFilter')
+btnFilter.addEventListener('click',()=>{
+    const piecesFilter=playLists.filter((playList)=>playList.prix<30)
+
+    document.querySelector('.fiches').innerHTML="";
+    genererPieces(piecesFilter);
+})
