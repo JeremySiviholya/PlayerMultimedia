@@ -30,6 +30,7 @@ const genererPieces=(playLists)=>
         PiecesElemnts.appendChild(titreElemnt);
     
     }
+    
 }
 
 genererPieces(playLists);

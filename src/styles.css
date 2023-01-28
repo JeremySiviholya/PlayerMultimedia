@@ -9,6 +9,7 @@ body{
 
 .fiches{
     background-image: url(../img/watches.png);
+    /* background-repeat: no-repeat; */
     @apply blur-2xl opacity-70 animate-blob overflow-hidden
 }
 

@@ -654,6 +654,10 @@ video {
   flex: 1 1 0%;
 }
 
+.cursor-default {
+  cursor: default;
+}
+
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
@@ -744,6 +748,7 @@ body{
 
 .fiches{
   background-image: url(../img/watches.png)
+  /* background-repeat: no-repeat; */
 }
 
 @-webkit-keyframes blob {
