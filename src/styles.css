@@ -2,3 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.fiches article {
+
+	@apply border shadow-sm  items-center   p-[4px] rounded ;
+}
+
+/* .fiches{
+    background-image: url(../img/watches.png);
+    @apply blur-2xl opacity-70 animate-blob
+} */

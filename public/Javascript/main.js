@@ -1,4 +1,5 @@
-const playLists=await fetch('../../data/playList.json').then(playLists=>playLists.json());
+const reponse=await fetch('../../data/playList.json');
+const playLists=await reponse.json();
 
 
 
@@ -6,13 +7,16 @@ const playLists=await fetch('../../data/playList.json').then(playLists=>playList
 const genererPieces=(playLists)=>
 {
     
-    const SectionFiches=document.querySelector('.fiches');
-    const PiecesElemnts=document.createElement('article')
-    PiecesElemnts.classList.add("personalize")
+    
 
     for(let i=0;i<playLists.length;i+=1)
     {
         const article=playLists[i];
+
+        const SectionFiches=document.querySelector('.fiches');
+        const PiecesElemnts=document.createElement('article')
+    
+        PiecesElemnts.classList.add("personalize")
         
 
         const imageElement=document.createElement('img');
