@@ -2,17 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-
-.fiches article {
-
-	@apply border shadow-sm  items-center   p-[4px] rounded ;
+body{
+    background-image: url(../img/image.jpg);
 }
 
-.fiche{
+
+.fiches{
     background-image: url(../img/watches.png);
-    @apply blur-2xl opacity-70 animate-blob
+    @apply blur-2xl opacity-70 animate-blob overflow-hidden
 }
 
 .personalize{
-    @apply bg-black
+    @apply bg-black blur-none animate-none  p-2 rounded
 }
