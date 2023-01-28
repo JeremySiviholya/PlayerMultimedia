@@ -8,7 +8,11 @@
 	@apply border shadow-sm  items-center   p-[4px] rounded ;
 }
 
-/* .fiches{
+.fiche{
     background-image: url(../img/watches.png);
     @apply blur-2xl opacity-70 animate-blob
-} */
+}
+
+.personalize{
+    @apply bg-black
+}
