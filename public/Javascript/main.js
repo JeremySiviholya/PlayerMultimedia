@@ -1,10 +1,12 @@
 import { ajouterListenerAvis } from "./avis.js";
+import {darkMode} from "./darkmode.js"
 
 const reponse=await fetch('../../data/playList.json');
 const playLists=await reponse.json();
 
 
 ajouterListenerAvis();
+darkMode();
 
 const genererPieces=(playLists)=>
 {
@@ -28,13 +30,13 @@ const genererPieces=(playLists)=>
         titreElemnt.innerText=article.titre;
 
         const avisBouton=document.createElement('button');
-        avisBouton.textContent='ajouter un avis'
+        avisBouton.textContent='avis'
         avisBouton.dataset.id=article.id;
 
         SectionFiches.appendChild(PiecesElemnts);
         PiecesElemnts.appendChild(imageElement);
         PiecesElemnts.appendChild(titreElemnt);
-        PiecesElemnts.appendChild(avisBouton);
+       // PiecesElemnts.appendChild(avisBouton);
     
     }
     
@@ -63,3 +65,4 @@ btnFilter.addEventListener('click',()=>{
     document.querySelector('.fiches').innerHTML="";
     genererPieces(piecesFilter);
 })
+

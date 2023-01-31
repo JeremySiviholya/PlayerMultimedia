@@ -2,9 +2,82 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    background-image: url(../img/image.jpg);
+/* general styles */
+
+*{
+    @apply m-0 p-0;
+    box-sizing: border-box;
 }
+
+body{
+    @apply h-[100vh] flex justify-center items-center
+}
+.toggle i{
+    line-height: 60px;
+    @apply w-[50%] text-center;
+    font-size: 30px;
+    z-index: 1;
+}
+.toggle{
+    @apply cursor-pointer flex justify-between relative w-[120px] h-[60px] rounded-[50px]
+}
+.toggle .ball{
+    @apply absolute w-[45px] h-[45px] m-[7.5px] rounded-[50px]
+}
+
+.light input{
+    display: none;
+}
+/* light mode */
+
+.light{
+    @apply bg-white
+}
+
+.light .toggle{
+    @apply bg-gradient-to-r from-slate-300 to-slate-200 shadow-md;
+}
+
+.light .toggle .bxs-sun{
+    color: #fafafa;
+}
+
+.light .togglebx-moon{
+    color: #151d2a;
+}
+
+.light .toggle .ball{
+    background: #151d2a;
+}
+
+
+/* dark mode */
+
+.dark{
+    background: #151d2a;
+}
+
+.dark .toggle{
+    background: #151d2a;
+    @apply  shadow-md;
+}
+
+.dark .toggle .bxs-sun{
+    color: #fafafa;
+}
+
+.dark .togglebx-moon{
+    color: #151d2a;
+}
+
+.dark .toggle .ball{
+    background: #fafafa;
+    transform:  translateX(60px);
+}
+
+/* body{
+    background-image: url(../img/image.jpg);
+} */
 
 
 

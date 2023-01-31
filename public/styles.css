@@ -821,9 +821,110 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-body{
-  background-image: url(../img/image.jpg);
+/* general styles */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
+
+body {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggle i{
+  line-height: 60px;
+  width: 50%;
+  text-align: center;
+  font-size: 30px;
+  z-index: 1;
+}
+
+.toggle {
+  position: relative;
+  display: flex;
+  height: 60px;
+  width: 120px;
+  cursor: pointer;
+  justify-content: space-between;
+  border-radius: 50px;
+}
+
+.toggle .ball {
+  position: absolute;
+  margin: 7.5px;
+  height: 45px;
+  width: 45px;
+  border-radius: 50px;
+}
+
+.light input{
+  display: none;
+}
+
+/* light mode */
+
+.light {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.light .toggle {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  --tw-gradient-from: #cbd5e1;
+  --tw-gradient-to: rgb(203 213 225 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #e2e8f0;
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.light .toggle .bxs-sun{
+  color: #fafafa;
+}
+
+.light .togglebx-moon{
+  color: #151d2a;
+}
+
+.light .toggle .ball{
+  background: #151d2a;
+}
+
+/* dark mode */
+
+.dark{
+  background: #151d2a;
+}
+
+.dark .toggle{
+  background: #151d2a;
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.dark .toggle .bxs-sun{
+  color: #fafafa;
+}
+
+.dark .togglebx-moon{
+  color: #151d2a;
+}
+
+.dark .toggle .ball{
+  background: #fafafa;
+  transform:  translateX(60px);
+}
+
+/* body{
+    background-image: url(../img/image.jpg);
+} */
 
 .personalize {
   border-radius: 0.25rem;
