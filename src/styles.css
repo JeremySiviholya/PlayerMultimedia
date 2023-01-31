@@ -7,12 +7,7 @@ body{
 }
 
 
-.fiches{
-    background-image: url(../img/watches.png);
-    /* background-repeat: no-repeat; */
-    @apply blur-2xl opacity-70 animate-blob overflow-hidden
-}
 
 .personalize{
-    @apply bg-black blur-none animate-none  p-2 rounded
+    @apply bg-black blur-none  p-2 rounded
 }
