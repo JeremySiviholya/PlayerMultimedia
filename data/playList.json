@@ -1,29 +1,34 @@
 [
     {
+        "id":1,
         "titre":"Power Hour",
         "image":"../img/cor.png",
         "prix":30,
         "disponibilite":true
     },
     {
+        "id":2,
         "titre":"Motivation Mix",
         "image":"../img/cor1.png",
         "prix":3,
         "disponibilte":false
     },
     {
+        "id":3,
         "titre":"Beast Mode",
         "image":"../img/cor2.png",
         "prix":3,
         "disponibilte":false
     },
     {
+        "id":4,
         "titre":"Work ut",
         "image":"../img/cor3.png",
         "prix":3,
         "disponibilte":false
     },
     {
+        "id":5,
         "titre":"Energy Boster",
         "image":"../img/cor4.png",
         "prix":3,

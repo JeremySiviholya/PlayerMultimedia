@@ -1,8 +1,10 @@
+import { ajouterListenerAvis } from "./avis.js";
+
 const reponse=await fetch('../../data/playList.json');
 const playLists=await reponse.json();
 
 
-
+ajouterListenerAvis();
 
 const genererPieces=(playLists)=>
 {
@@ -25,9 +27,14 @@ const genererPieces=(playLists)=>
         const titreElemnt=document.createElement('p');
         titreElemnt.innerText=article.titre;
 
+        const avisBouton=document.createElement('button');
+        avisBouton.textContent='ajouter un avis'
+        avisBouton.dataset.id=article.id;
+
         SectionFiches.appendChild(PiecesElemnts);
         PiecesElemnts.appendChild(imageElement);
         PiecesElemnts.appendChild(titreElemnt);
+        PiecesElemnts.appendChild(avisBouton);
     
     }
     
