@@ -58,7 +58,7 @@ body{
 }
 
 .dark .toggle{
-    background: #151d2a;
+    background: #3d547c;
     @apply  shadow-md;
 }
 
