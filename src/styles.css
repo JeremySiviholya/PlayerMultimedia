@@ -9,6 +9,19 @@
     box-sizing: border-box;
 }
 
+.fiches{
+    padding: 20px;
+    /* background-image: url(../img/watches.png); */
+    background: #424141;
+    @apply backdrop-opacity-10;
+    /* backdrop-filter: blur(2px); */
+    /* backdrop-filter: opacity(20%); */
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    max-height: 340px;
+    max-width: 540px;
+}
+
 body{
     @apply h-[100vh] flex justify-center items-center
 }
